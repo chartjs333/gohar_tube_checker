@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+ >
+
+    <LinearLayout
+        android:id="@+id/text1"
+        android:layout_width="392dp"
+        android:layout_height="157dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="30dp"
+        android:gravity="center_vertical"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:fitsSystemWindows="true"
+            android:focusableInTouchMode="true"
+            android:fontFamily="sans-serif-medium"
+            android:text="           Done!"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            android:textColor="@color/dark_blue"
+            android:textSize="30sp"
+            android:visibility="visible" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=" You can now place the test tube \n in the selected compartment \n of the refrigerator"
+            android:textSize="20sp"
+            android:layout_gravity="center"
+            android:textColor="@color/sky_blue"
+            android:visibility="visible"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/text1"
+        android:layout_marginTop="300dp"
+        android:gravity="center"
+        android:orientation="vertical">
+
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/done"
+            android:layout_width="350dp"
+            android:layout_height="100dp"
+            android:text="Finish test tube handling"
+            android:textColor="@color/white"
+
+            android:backgroundTint="@color/dark_blue"/>
+    </LinearLayout>
+</RelativeLayout>
